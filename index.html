@@ -52,35 +52,53 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">A3: Android Agent Arena for Mobile GUI Agents
-            </h1>
+            <h1 class="title is-1 publication-title">A3: Android Agent Arena for Mobile GUI Agents with Essential-State Procedural Evaluation</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://yuxiangchai.github.io/" target="_blank">Yuxiang Chai</a><sup>1</sup>,</span>
+                <a href="https://yuxiangchai.github.io/" target="_blank">Yuxiang Chai</a><sup>1,4*</sup>,</span>
               <span class="author-block">
-                Hanhao Li<sup>2</sup>,</span>
+                Shunye Tang<sup>2,4*</sup>,</span>
               <span class="author-block">
-                Jiayu Zhang<sup>2</sup>,</span>
+                Han Xiao<sup>1,4</sup>,</span>
               <span class="author-block">
-                Liang Liu<sup>3</sup>,</span>
+                Weifeng Lin<sup>1,4</sup>,</span>
               <span class="author-block">
-                Guozhi Wang<sup>3</sup>,</span><br>
+                Hanhao Li<sup>3</sup>,</span>
               <span class="author-block">
-                Shuai Ren<sup>3</sup>,</span>
+                Jiayu Zhang<sup>3</sup>,</span>
               <span class="author-block">
-                Siyuan Huang<sup>4</sup>,</span>
+                Liang Liu<sup>4</sup>,</span>
               <span class="author-block">
-                <a href="https://www.ee.cuhk.edu.hk/~hsli/" target="_blank">Hongsheng Li</a><sup>&#9993;1</sup></span>
+                Pengxiang Zhao<sup>4</sup>,</span>
+              <span class="author-block">
+                Guangyi Liu<sup>4</sup>,</span>
+              <span class="author-block">
+                Guozhi Wang<sup>4</sup>,</span>
+              <span class="author-block">
+                Shuai Ren<sup>4</sup>,</span>
+              <span class="author-block">
+                Rongduo Han<sup>2</sup>,</span>
+              <span class="author-block">
+                Haining Zhang<sup>2</sup>,</span>
+              <span class="author-block">
+                Siyuan Huang<sup>5</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.ee.cuhk.edu.hk/~hsli/" target="_blank">Hongsheng Li</a><sup>1†</sup></span>
             </div>
-            <br>
+
             <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <sup>1</sup> MMLab, CUHK &nbsp;&nbsp;&nbsp;<sup>2</sup> EE department, CUHK<br>
-                <sup>3</sup> vivo AI Lab &nbsp;&nbsp;&nbsp;<sup>4</sup> SJTU<br>
-              </span>
-              <span class="eql-cntrb"><small><br>
-                  <sup>&#9993;</sup>Corresponding Author
+              <span class="author-block"><sup>1</sup>MMLab @ CUHK</span>
+              <span class="author-block"><sup>2</sup>Nankai University</span>
+              <span class="author-block"><sup>3</sup>EE @ CUHK</span>
+              <span class="author-block"><sup>4</sup>vivo AI Lab</span>
+              <span class="author-block"><sup>5</sup>SJTU</span>
+              <br>
+              <span class="eql-cntrb"><small>
+                  <sup>*</sup>Equal contribution
+                </small></span>
+              <span class="eql-cntrb"><small>
+                  <sup>†</sup>Corresponding Author
                 </small></span>
             </div>
 
@@ -109,8 +127,9 @@
                 </span> -->
 
                 <!-- Github link -->
+                <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://github.com/YuxiangChai/A3/tree/main" target="_blank"
+                  <a href="https://github.com/YuxiangChai/AITK" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -172,23 +191,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              AI agents have become increasingly prevalent in recent years, 
-              driven by significant advancements in the field of large language models (LLMs). 
-              Mobile GUI agents, a subset of AI agents, are designed to autonomously 
-              perform tasks on mobile devices. While numerous studies have introduced 
-              agents, datasets, and benchmarks to advance mobile GUI agent research, 
-              many existing datasets focus on static frame evaluations and fail to provide 
-              a comprehensive platform for assessing performance on real-world, in-the-wild 
-              tasks. To address this gap, we present Android Agent Arena (A3), a novel 
-              evaluation platform. Unlike existing in-the-wild systems, A3 offers: 
-              (1) meaningful and practical tasks, such as real-time online information 
-              retrieval and operational instructions; (2) a larger, more flexible action 
-              space, enabling compatibility with agents trained on any dataset; and 
-              (3) automated business-level LLM-based evaluation process. A3 includes 21 
-              widely used general third-party apps and 201 tasks representative of common 
-              user scenarios, providing a robust foundation for evaluating mobile GUI 
-              agents in real-world situations and a new autonomous evaluation process 
-              for less human labor and coding expertise.
+              The advancement of Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) has catalyzed the development of mobile graphic user interface (GUI) AI agents, which is designed to autonomously perform tasks on mobile devices. However, a significant gap persists in mobile GUI agent evaluation, where existing benchmarks predominantly rely on either static frame assessments such as AndroidControl or offline static apps such as AndroidWorld and thus fail to capture agent performance in dynamic, real-world online mobile apps. To address this gap, we present Android Agent Arena (A3), a novel "essential-state" based procedural evaluation system for mobile GUI agents. A3 introduces a benchmark of 100 tasks derived from 20 widely-used, dynamic online apps across 20 categories from the Google Play Store, ensuring evaluation comprehension. A3 also presents a novel "essential-state" based procedural evaluation method that leverages MLLMs as reward models to progressively verify task completion and process achievement. This evaluation approach address the limitations of traditional function based evaluation methods on online dynamic apps. Furthermore, A3 includes a toolkit to streamline Android device interaction, reset online environment and apps and facilitate data collection from both human and agent demonstrations. The complete A3 system, including the benchmark and tools, will be publicly released to provide a robust foundation for future research and development in mobile GUI agents.
             </p>
           </div>
         </div>
@@ -196,6 +199,241 @@
     </div>
   </section>
   <!-- End paper abstract -->
+
+  <!-- Benchmark Results -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3 has-text-centered">Leaderboard</h2>
+          <div class="content">
+
+            <style>
+              .table-container {
+                overflow-x: auto;
+              }
+              .table.is-benchmark td, .table.is-benchmark th {
+                white-space: nowrap;
+                text-align: center;
+                vertical-align: middle;
+              }
+              .table.is-benchmark th.is-sortable {
+                cursor: pointer;
+              }
+              .sub-header {
+                font-size: 0.9em; 
+                font-weight: normal;
+              }
+            </style>
+            <div class="table-container">
+              <table class="table is-bordered is-hoverable is-striped is-benchmark">
+                <thead>
+                  <tr>
+                    <th rowspan="2">Agent</th>
+                    <th rowspan="2">Size</th>
+                    <th rowspan="2">Overall SR</th>
+                    <th rowspan="2">Overall ESAR</th>
+                    <th colspan="5">Success Rate (SR) %</th>
+                    <th colspan="5">Essential State Achieved Rate (ESAR) %</th>
+                  </tr>
+                  <tr>
+                    <!-- SR Columns -->
+                    <th class="sub-header">Easy</th>
+                    <th class="sub-header">Medium</th>
+                    <th class="sub-header">Hard</th>
+                    <th class="sub-header">Operation</th>
+                    <th class="sub-header">Inf. Query</th>
+                    <!-- ESAR Columns -->
+                    <th class="sub-header">Easy</th>
+                    <th class="sub-header">Medium</th>
+                    <th class="sub-header">Hard</th>
+                    <th class="sub-header">Operation</th>
+                    <th class="sub-header">Inf. Query</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 1. T3A + Gemini-2.5-pro -->
+                  <tr>
+                    <td>T3A + <br> Gemini-2.5-pro</td>
+                    <td>-</td>
+                    <td>53.0</td>
+                    <td>66.4</td>
+                    <td>57.1</td>
+                    <td>55.0</td>
+                    <td>44.0</td>
+                    <td>55.6</td>
+                    <td>46.6</td>
+                    <td>68.2</td>
+                    <td>67.9</td>
+                    <td>62.5</td>
+                    <td>72.9</td>
+                    <td>50.5</td>
+                  </tr>
+                  <!-- 2. InfiGUI-R1 -->
+                  <tr>
+                    <td>InfiGUI-R1</td>
+                    <td>7B</td>
+                    <td>27.0</td>
+                    <td>52.1</td>
+                    <td>34.3</td>
+                    <td>30.0</td>
+                    <td>12.0</td>
+                    <td>34.7</td>
+                    <td>7.1</td>
+                    <td>55.3</td>
+                    <td>50.8</td>
+                    <td>51.0</td>
+                    <td>54.6</td>
+                    <td>46.2</td>
+                  </tr>
+                  <!-- 3. UI-Venus -->
+                  <tr>
+                    <td>UI-Venus</td>
+                    <td>7B</td>
+                    <td>20.0</td>
+                    <td>32.0</td>
+                    <td>28.5</td>
+                    <td>15.0</td>
+                    <td>16.0</td>
+                    <td>20.8</td>
+                    <td>17.8</td>
+                    <td>41.2</td>
+                    <td>29.7</td>
+                    <td>27.1</td>
+                    <td>33.9</td>
+                    <td>27.5</td>
+                  </tr>
+                  <!-- 4. Qwen3-VL -->
+                  <tr>
+                    <td>Qwen3-VL</td>
+                    <td>7B</td>
+                    <td>17.0</td>
+                    <td>38.2</td>
+                    <td>34.3</td>
+                    <td>12.5</td>
+                    <td>0.0</td>
+                    <td>20.8</td>
+                    <td>7.1</td>
+                    <td>50.6</td>
+                    <td>35.2</td>
+                    <td>31.3</td>
+                    <td>44.0</td>
+                    <td>24.2</td>
+                  </tr>
+                  <!-- 5. Mobile-Use + Qwen2.5-VL -->
+                  <tr>
+                    <td>Mobile-Use + <br> Qwen2.5-VL</td>
+                    <td>7B</td>
+                    <td>16.0</td>
+                    <td>39.5</td>
+                    <td>34.3</td>
+                    <td>10.0</td>
+                    <td>0.0</td>
+                    <td>22.2</td>
+                    <td>0.0</td>
+                    <td>48.2</td>
+                    <td>39.9</td>
+                    <td>31.3</td>
+                    <td>43.1</td>
+                    <td>30.8</td>
+                  </tr>
+                  <!-- 6. T3A + Qwen2.5-VL -->
+                  <tr>
+                    <td>T3A + <br> Qwen2.5-VL</td>
+                    <td>7B</td>
+                    <td>15.0</td>
+                    <td>30.7</td>
+                    <td>31.4</td>
+                    <td>10.0</td>
+                    <td>4.0</td>
+                    <td>19.4</td>
+                    <td>3.8</td>
+                    <td>37.6</td>
+                    <td>28.1</td>
+                    <td>28.1</td>
+                    <td>29.4</td>
+                    <td>34.1</td>
+                  </tr>
+                  <!-- 7. GUI-OWL -->
+                  <tr>
+                    <td>GUI-OWL</td>
+                    <td>7B</td>
+                    <td>14.0</td>
+                    <td>32.0</td>
+                    <td>31.4</td>
+                    <td>7.5</td>
+                    <td>0.0</td>
+                    <td>18.1</td>
+                    <td>3.6</td>
+                    <td>49.4</td>
+                    <td>26.6</td>
+                    <td>23.9</td>
+                    <td>35.8</td>
+                    <td>23.1</td>
+                  </tr>
+                  <!-- 8. UI-Genie -->
+                  <tr>
+                    <td>UI-Genie</td>
+                    <td>7B</td>
+                    <td>13.0</td>
+                    <td>32.1</td>
+                    <td>25.8</td>
+                    <td>10.0</td>
+                    <td>0.0</td>
+                    <td>16.7</td>
+                    <td>3.6</td>
+                    <td>41.2</td>
+                    <td>25.8</td>
+                    <td>32.3</td>
+                    <td>34.9</td>
+                    <td>25.3</td>
+                  </tr>
+                  <!-- 9. UI-TARS-1.5 -->
+                  <tr>
+                    <td>UI-TARS-1.5</td>
+                    <td>7B</td>
+                    <td>12.0</td>
+                    <td>28.2</td>
+                    <td>20.0</td>
+                    <td>10.0</td>
+                    <td>4.0</td>
+                    <td>13.9</td>
+                    <td>7.1</td>
+                    <td>35.3</td>
+                    <td>21.8</td>
+                    <td>23.9</td>
+                    <td>31.2</td>
+                    <td>20.9</td>
+                  </tr>
+                  <!-- 10. Qwen2.5-VL -->
+                  <tr>
+                    <td>Qwen2.5-VL</td>
+                    <td>7B</td>
+                    <td>3.0</td>
+                    <td>14.2</td>
+                    <td>5.7</td>
+                    <td>0.0</td>
+                    <td>4.0</td>
+                    <td>4.2</td>
+                    <td>0.0</td>
+                    <td>10.5</td>
+                    <td>10.9</td>
+                    <td>21.8</td>
+                    <td>15.6</td>
+                    <td>11.0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              Benchmark results evaluated by our A3RM. We report Task Success Rate (SR) and Essential State Achieved Rate (ESAR) across task categories and difficulties. Sorted by Overall SR.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Benchmark Results -->
 
 
   <!-- Image carousel -->
